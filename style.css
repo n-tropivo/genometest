@@ -1,0 +1,109 @@
+:root {
+    --header-color: #e0d9c9;
+}
+
+@font-face {
+    font-family: "RDA1";
+    src: url("fonts/reddeliciousacad.woff") format("woff");
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: var(--header-color);
+    height: 5em;
+    width: 100%;
+    display: flex;
+}
+
+.header-contents {
+    min-width: 0;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 2em 0 2em;
+}
+
+.dropdown{
+    display: none;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+    margin: 0 1em 0 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+.navigation {
+    flex-grow: 1;
+}
+
+.int-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.int-links > li > a {
+    text-decoration: none;
+    color: black;
+    font-family: 'RDA1';
+    font-size: 180%;
+}
+
+.ext-links {
+    display: flex;
+    /* flex-basis: 0; */
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 50%;
+}
+
+.ext-links > li {
+
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.ext-links > li > a {
+    display: inline-block;
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.ext-links > li > a > svg {
+    height: 100%;
+    /* width: 2em; */
+}
+/* 
+.rarible-svg {
+    height: 50%;
+} */
+
+/* .ext-links>li::before{
+    position: relative;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 10px;
+    height: 10px;
+    color: red;
+
+} */
+
